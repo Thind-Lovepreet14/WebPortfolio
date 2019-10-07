@@ -1,0 +1,30 @@
+.slider-container{
+    display:flex;
+    flex: 75%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right:50px;
+
+    img{
+        height:100%;
+        width:100%;
+    }
+
+    h1{
+    position: absolute;  
+    left: 50%;                        
+    top: 50%;                         
+    transform: translate(-50%, -50%); 
+    font-size: 5em;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    span{
+        display:block
+    }
+    }
+}
+
+

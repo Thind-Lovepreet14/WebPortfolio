@@ -1,0 +1,12 @@
+@import './_partials/reset';
+@import "./_partials/homepage";
+@import './_partials/navbar';
+@import './_partials/heroslider';
+@import './_partials/about';
+
+*{
+    box-sizing: border-box;
+    min-height: 0; 
+    min-width: 0;
+    overflow-y:scroll;
+}
