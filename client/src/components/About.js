@@ -3,6 +3,7 @@ import React from 'react';
 const About = () => {
     return(
         <div className="about-container">
+            <h2>About <span>Who am I?</span></h2>
             <p>
             Sed ullamcorper ornare pulvinar. Nunc aliquam sapien fermentum, aliquam ligula accumsan, accumsan orci. 
             Ut arcu lacus, dapibus nec mattis nec, dictum eu ligula. Vivamus at scelerisque risus. Maecenas nibh 

@@ -9,9 +9,11 @@ const Navbar = () => {
             <h3>Lovepreet Thind</h3>
             <div className="list-container">
                 <ul>
-                    <li><a href="" className="active">Home</a></li>
-                    <li><a  href="">About</a></li>
-                    <li><a  href="">Contacts</a></li>
+                    <li><a href="" className="active">HOME</a></li>
+                    <li><a  href="">ABOUT</a></li>
+                    <li><a  href="">SKILLS</a></li>
+                    <li><a  href="">PORTFOLIO</a></li>
+                    <li><a  href="">CONTACT ME</a></li>
                 </ul>
             </div>
         </nav>

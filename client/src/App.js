@@ -4,14 +4,18 @@ import './App.css';
 import Navbar from './components/utils/Navbar';
 import HeroImage from './components/HeroImage';
 import About from './components/About';
+import ParallaxContainer from './components/ParallaxContainer';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <>
-      <div className="main-container">
-        <Navbar />
+      <Navbar />
+      <div className="main-container"> 
         <HeroImage />
-        {/* <About /> */}
+        <About />
+        <ParallaxContainer />
+        <Skills />
       </div>
     </>
   );

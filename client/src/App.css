@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -365,14 +366,10 @@ textarea {
 }
 
 .main-container {
-  display: flex;
-  flex-direction: row;
+  margin-left: 28%;
 }
 
 nav {
-  display: flex;
-  flex-direction: column;
-  flex: 25%;
   align-items: center;
   background: #f2f3f7;
   height: 100vh;
@@ -387,6 +384,7 @@ nav img {
 nav h3 {
   font-size: 1.6em;
   font-weight: bold;
+  text-align: center;
 }
 
 .list-container {
@@ -395,9 +393,12 @@ nav h3 {
 .list-container li {
   margin: 2vh;
   text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 5px 0;
 }
 .list-container a {
-  font-size: 1.2em;
+  font-size: 0.9em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -423,24 +424,25 @@ nav h3 {
 }
 
 .nav-container {
-  margin-left: 50px;
+  position: fixed;
+  margin-left: 3%;
+  width: 25%;
 }
 
 .slider-container {
-  display: flex;
-  flex: 75%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 50px;
-}
-.slider-container img {
-  height: 100%;
-  width: 100%;
+  display: block;
+  margin-right: 3%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero_image.jpeg");
+  background-size: cover;
+  background-position-y: 20%;
+  height: 100vh;
+  margin-bottom: 10%;
 }
 .slider-container h1 {
   position: absolute;
+  color: #fff;
   left: 50%;
-  top: 50%;
+  top: 24%;
   transform: translate(-50%, -50%);
   font-size: 5em;
   -webkit-user-select: none;
@@ -457,14 +459,139 @@ nav h3 {
 }
 
 .about-container {
-  flex-direction: column;
+  display: block;
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+.about-container h2 {
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #999;
+  text-transform: uppercase;
+  line-height: 3em;
+  font-weight: 600;
+}
+.about-container h2 span {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin-bottom: 4em;
+  color: #000;
+  font-weight: 700;
+}
+.about-container p {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2em;
+}
+
+.parent-container {
+  margin-right: 3%;
+  margin-bottom: 10%;
+}
+
+.parallax-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/charlotte_parallax.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 50vh;
+  min-width: 100%;
+}
+.parallax-container h3 {
+  font-size: 1.5em;
+  color: #fff;
+  padding-top: 170px;
+  display: block;
+  text-align: center;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+.parallax-container h3 span {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.skills-maincontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.skills-maincontainer .skills-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  margin: 20% 10% 20%;
+  position: relative;
+}
+.skills-maincontainer img {
+  height: 120px;
+  width: 160px;
+  position: absolute;
+  display: block;
+  top: -62px;
+  left: -28px;
+  right: 0;
+}
+.skills-maincontainer p {
+  margin: 50px;
+  font-family: "Playfair Display", serif;
+}
+.skills-maincontainer p .skill-title {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 40% 0 10% 0;
+}
+.skills-maincontainer p .skill-description {
+  display: block;
+  font-size: 0.8em;
+  line-height: 2em;
+  color: #999;
+}
+
+.skills-maintitle {
+  margin-left: 3%;
+}
+.skills-maintitle h2 {
+  margin-top: 10%;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #999;
+  text-transform: uppercase;
+  line-height: 3em;
+  font-weight: 600;
+}
+.skills-maintitle h2 span {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin-bottom: 4em;
+  color: #000;
+  font-weight: 700;
 }
 
 * {
   box-sizing: border-box;
   min-height: 0;
   min-width: 0;
-  overflow-y: scroll;
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Playfair Display", serif;
 }
 
 /*# sourceMappingURL=App.css.map */

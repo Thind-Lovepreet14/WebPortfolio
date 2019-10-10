@@ -1,12 +1,23 @@
-@import './_partials/reset';
+@import "./_partials/reset";
 @import "./_partials/homepage";
-@import './_partials/navbar';
-@import './_partials/heroslider';
-@import './_partials/about';
+@import "./_partials/navbar";
+@import "./_partials/heroslider";
+@import "./_partials/about";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import './_partials/parallaxcontainer';
+@import './_partials/skills';
 
-*{
-    box-sizing: border-box;
-    min-height: 0; 
-    min-width: 0;
-    overflow-y:scroll;
+* {
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+  font-family: "Playfair Display", serif;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Playfair Display", serif;
 }

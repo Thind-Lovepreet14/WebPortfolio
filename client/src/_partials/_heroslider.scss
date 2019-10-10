@@ -1,19 +1,20 @@
 .slider-container{
-    display:flex;
-    flex: 75%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right:50px;
+    display:block;
+    margin-right:3%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("/img/hero_image.jpeg");
+    background-size: cover;
+    background-position-y: 20%;
+    height:100vh;
+    margin-bottom: 10%;
 
-    img{
-        height:100%;
-        width:100%;
-    }
+
+ 
 
     h1{
-    position: absolute;  
+    position: absolute; 
+    color:#fff;
     left: 50%;                        
-    top: 50%;                         
+    top: 24%;                         
     transform: translate(-50%, -50%); 
     font-size: 5em;
     -webkit-user-select: none; /* Safari */        
@@ -26,5 +27,4 @@
     }
     }
 }
-
 
