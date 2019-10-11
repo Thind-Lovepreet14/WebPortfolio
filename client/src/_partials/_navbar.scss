@@ -3,10 +3,11 @@ nav{
     background:rgb(242, 243, 247);
     height:100vh;
     padding: 20px;
-    // z-index:1;
+    z-index:1;
 
     img{
-        height:150px;
+        height:auto;
+        background-position-x: -20px;
         width: 150px;
         border-radius: 50%;
         margin: 20px 0 20px 0;

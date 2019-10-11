@@ -6,6 +6,9 @@ import HeroImage from './components/HeroImage';
 import About from './components/About';
 import ParallaxContainer from './components/ParallaxContainer';
 import Skills from './components/Skills';
+import Porfolio from './components/Portfolio';
+import ContactMe from './components/ContactMe';
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <About />
         <ParallaxContainer />
         <Skills />
+        <Porfolio />
+        <ContactMe />
       </div>
     </>
   );

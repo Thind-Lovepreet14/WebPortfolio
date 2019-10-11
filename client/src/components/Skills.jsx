@@ -39,7 +39,7 @@ class Skills extends React.Component {
        } else {
            return (
                <>
-               <div className="skills-maintitle"><h2>My Speciality <span>My Skills</span></h2></div>
+               <div id="skills" className="skills-maintitle"><h2>My Speciality <span>My Skills</span></h2></div>
                 <div className="skills-maincontainer"> 
                         {skillsList.map((skill, index) => (
                             <div key={index} className="skills-container">

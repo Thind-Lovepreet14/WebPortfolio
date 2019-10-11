@@ -374,9 +374,11 @@ nav {
   background: #f2f3f7;
   height: 100vh;
   padding: 20px;
+  z-index: 1;
 }
 nav img {
-  height: 150px;
+  height: auto;
+  background-position-x: -20px;
   width: 150px;
   border-radius: 50%;
   margin: 20px 0 20px 0;
@@ -437,6 +439,59 @@ nav h3 {
   background-position-y: 20%;
   height: 100vh;
   margin-bottom: 10%;
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 5s;
+  /* Internet Explorer */
+  -o-animation: fadein 5s;
+  /* Opera < 12.1 */
+  animation: fadein 5s;
+  /* Firefox < 16 */
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .slider-container h1 {
   position: absolute;
@@ -453,6 +508,17 @@ nav h3 {
   /* IE10+/Edge */
   user-select: none;
   /* Standard */
+  animation: example 1s;
+  animation-delay: 0.2s;
+}
+@keyframes example {
+  0% {
+    top: 38%;
+    z-index: 0;
+  }
+  100% {
+    top: 24%;
+  }
 }
 .slider-container h1 span {
   display: block;
@@ -463,11 +529,21 @@ nav h3 {
   margin-left: 3%;
   margin-right: 5%;
   margin-bottom: 10%;
+  animation: example2 1s linear;
+}
+@keyframes example2 {
+  0% {
+    transform: translateX(-25%);
+    z-index: 0;
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 .about-container h2 {
   font-size: 10px;
   letter-spacing: 5px;
-  color: #999;
+  color: #727272;
   text-transform: uppercase;
   line-height: 3em;
   font-weight: 600;
@@ -554,7 +630,7 @@ nav h3 {
   display: block;
   font-size: 0.8em;
   line-height: 2em;
-  color: #999;
+  color: #727272;
 }
 
 .skills-maintitle {
@@ -564,7 +640,7 @@ nav h3 {
   margin-top: 10%;
   font-size: 10px;
   letter-spacing: 5px;
-  color: #999;
+  color: #727272;
   text-transform: uppercase;
   line-height: 3em;
   font-weight: 600;
@@ -576,6 +652,102 @@ nav h3 {
   margin-bottom: 4em;
   color: #000;
   font-weight: 700;
+}
+
+.portfolio-maincontainer {
+  display: grid;
+  grid-template-columns: 427px 427px;
+  grid-gap: 20px;
+}
+.portfolio-maincontainer .portfolio-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  position: relative;
+}
+.portfolio-maincontainer .portfolio-container .overlay {
+  position: absolute;
+  background-color: #2c98f0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.6s ease-in;
+}
+.portfolio-maincontainer .portfolio-container .overlay a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  position: absolute;
+  font-size: 2em;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.portfolio-maincontainer .portfolio-container .overlay a:hover, .portfolio-maincontainer .portfolio-container .overlay a:active, .portfolio-maincontainer .portfolio-container .overlay a:visited, .portfolio-maincontainer .portfolio-container .overlay a:focus {
+  border: none;
+  text-decoration: none;
+  outline: 0;
+}
+.portfolio-maincontainer .portfolio-container .overlay:hover {
+  opacity: 1;
+}
+.portfolio-maincontainer .portfolio-container img {
+  height: auto;
+  width: 427px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-maincontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-maincontainer .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact-maincontainer .icon-container a {
+  height: 150px;
+  width: 150px;
+}
+.contact-maincontainer .icon-container a .icons {
+  height: 150px;
+  width: 150px;
+}
+
+.contact-wrapper {
+  margin-bottom: 20%;
+}
+
+.contact-container {
+  margin-right: 5%;
+}
+.contact-container .form-control {
+  border-radius: 4px;
+  width: 100%;
+  background-color: #f2f3f7;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+}
+.contact-container .btn-submit {
+  border-radius: 2px;
+  color: #fff;
+  background-color: #2c98f0;
+  border: 2px solid #2c98f0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 15px;
 }
 
 * {
@@ -592,6 +764,10 @@ h4,
 p,
 a {
   font-family: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,23 @@
+[
+    {
+        "project": "eCommerce Website",
+        "link": "https://github.com/Thind-Lovepreet14/EcommerceWebsite",
+        "image": "/img/run4it.png"
+    },
+    {
+        "project": "Game of Life",
+        "link": "https://github.com/Thind-Lovepreet14/GameOfLife",
+        "image": "/img/gameoflife.png"
+    },
+    {
+        "project": "Comment Box",
+        "link": "https://github.com/Thind-Lovepreet14/CommentBox",
+        "image": "/img/commentbox.png"
+    },
+    {
+        "project": "Gateway Website",
+        "link": "https://github.com/Thind-Lovepreet14/JapanGateway",
+        "image": "/img/kyoto.png"
+    }
+    
+]

@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import './_partials/parallaxcontainer';
 @import './_partials/skills';
+@import './_partials/portfolio';
+@import './_partials/contactme';
 
 * {
   box-sizing: border-box;
@@ -20,4 +22,8 @@ h4,
 p,
 a {
   font-family: "Playfair Display", serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
