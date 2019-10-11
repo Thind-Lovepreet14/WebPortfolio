@@ -22,14 +22,26 @@ nav{
 
     .copyright-container {
         color:rgb(114, 114, 114);
-        font-size: 0.9em;
+        font-size: 0.8em;
         position: absolute;
-        transform: translateY(500%);
-        line-height: 1.5em;
+        bottom: 0;
+        left:15%;
+        margin-bottom: 4%;
+        
 
-        span{
-            display: block;
+        
+        // position: absolute;
+        // transform: translateY(400%);
+        
+        p {
+            line-height: 1.7em;
+
+            span{
+                display: block;
+            }
         }
+
+        
     }
 
 }

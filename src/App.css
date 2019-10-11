@@ -391,12 +391,16 @@ nav h3 {
 }
 nav .copyright-container {
   color: #727272;
-  font-size: 0.9em;
+  font-size: 0.8em;
   position: absolute;
-  transform: translateY(500%);
-  line-height: 1.5em;
+  bottom: 0;
+  left: 15%;
+  margin-bottom: 4%;
 }
-nav .copyright-container span {
+nav .copyright-container p {
+  line-height: 1.7em;
+}
+nav .copyright-container p span {
   display: block;
 }
 

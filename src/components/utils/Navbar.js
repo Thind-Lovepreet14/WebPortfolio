@@ -17,7 +17,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="copyright-container">
-                <p>© Copyright ©2019 All rights reserved |<span>Last Updated October 11, 2019</span></p>
+                <p>© Copyright ©2019 All rights reserved |<span>Last Updated: October 11, 2019</span></p>
             </div>
         </nav>
     )
