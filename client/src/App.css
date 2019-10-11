@@ -375,6 +375,7 @@ nav {
   height: 100vh;
   padding: 20px;
   z-index: 1;
+  position: relative;
 }
 nav img {
   height: auto;
@@ -387,6 +388,16 @@ nav h3 {
   font-size: 1.6em;
   font-weight: bold;
   text-align: center;
+}
+nav .copyright-container {
+  color: #727272;
+  font-size: 0.9em;
+  position: absolute;
+  transform: translateY(500%);
+  line-height: 1.5em;
+}
+nav .copyright-container span {
+  display: block;
 }
 
 .list-container {

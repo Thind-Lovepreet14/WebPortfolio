@@ -4,6 +4,7 @@ nav{
     height:100vh;
     padding: 20px;
     z-index:1;
+    position: relative;
 
     img{
         height:auto;
@@ -17,6 +18,18 @@ nav{
         font-size: 1.6em;
         font-weight: bold;
         text-align: center;
+    }
+
+    .copyright-container {
+        color:rgb(114, 114, 114);
+        font-size: 0.9em;
+        position: absolute;
+        transform: translateY(500%);
+        line-height: 1.5em;
+
+        span{
+            display: block;
+        }
     }
 
 }
@@ -52,6 +65,7 @@ a::after {
   a:hover::after {
     width: 100%;
   }
+
 }
 
 .img-container {
