@@ -380,7 +380,7 @@ nav {
 nav img {
   height: auto;
   background-position-x: -20px;
-  width: 150px;
+  width: 200px;
   border-radius: 50%;
   margin: 20px 0 20px 0;
 }
@@ -714,4 +714,4 @@ html {
   scroll-behavior: smooth;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

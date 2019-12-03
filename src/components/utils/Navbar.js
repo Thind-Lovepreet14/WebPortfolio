@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav className="nav-container">
             <div className="img-container">
-                <img src="/img/lovepreet.jpeg" alt="Lovepreet Thind" />
+                <img src="/img/Lovepreet_Thind.jpg" alt="Lovepreet Thind" />
             </div>
             <h3>Lovepreet Thind</h3>
             <div className="list-container">
@@ -17,7 +17,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="copyright-container">
-                <p>© Copyright ©2019 All rights reserved |<span>Last Updated: October 11, 2019</span></p>
+                <p>© Copyright ©2019 All rights reserved |<span>Last Updated: December 03, 2019</span></p>
             </div>
         </nav>
     )

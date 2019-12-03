@@ -1,5 +1,25 @@
 [
     {
+        "project": "eCommerce Website v3.1",
+        "link": "https://github.com/Thind-Lovepreet14/EcommerceWebsiteV3.1",
+        "image": "/img/app_icon.png"
+    },
+    {
+        "project": "LifeSports App",
+        "link": "https://github.com/Thind-Lovepreet14/LifeSportsApp",
+        "image": "/img/lifesports.png"
+    },
+    {
+        "project": "eCommerce Website v2",
+        "link": "https://github.com/Thind-Lovepreet14/EcommerceWebsiteV2",
+        "image": "/img/run4it_v2.png"
+    },
+    {
+        "project": "Fintech-Fix50 Hackathon",
+        "link": "https://github.com/Thind-Lovepreet14/Fintech-Fix50",
+        "image": "/img/hackathon.png"
+    },
+    {
         "project": "eCommerce Website",
         "link": "https://github.com/Thind-Lovepreet14/EcommerceWebsite",
         "image": "/img/run4it.png"
